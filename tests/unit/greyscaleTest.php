@@ -1,8 +1,8 @@
 <?php
 
-namespace MischiefCollective\ColorJizz\Tests;
+namespace ColorWorks\Tests;
 
-use MischiefCollective\ColorJizz\Formats\Hex;
+use ColorWorks\Formats\Hex;
 
 class greyscaleTest extends \PHPUnit_Framework_TestCase
 {

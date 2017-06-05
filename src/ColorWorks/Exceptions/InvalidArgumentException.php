@@ -1,6 +1,6 @@
 <?php
 
-namespace MischiefCollective\ColorJizz\Exceptions;
+namespace ColorWorks\Exceptions;
 
 class InvalidArgumentException extends \Exception
 {

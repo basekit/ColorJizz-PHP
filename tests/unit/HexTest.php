@@ -1,9 +1,9 @@
 <?php
 
-namespace MischiefCollective\ColorJizz\Tests;
+namespace ColorWorks\Tests;
 
-use MischiefCollective\ColorJizz\Formats\Hex,
-    MischiefCollective\ColorJizz\Exceptions\InvalidArgumentException;
+use ColorWorks\Formats\Hex,
+    ColorWorks\Exceptions\InvalidArgumentException;
 
 class HexTest extends \PHPUnit_Framework_TestCase
 {
@@ -32,7 +32,7 @@ class HexTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException MischiefCollective\ColorJizz\Exceptions\InvalidArgumentException
+     * @expectedException ColorWorks\Exceptions\InvalidArgumentException
      */
     public function testInvalidColorNameException()
     {
@@ -40,7 +40,7 @@ class HexTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException MischiefCollective\ColorJizz\Exceptions\InvalidArgumentException
+     * @expectedException ColorWorks\Exceptions\InvalidArgumentException
      */
     public function testInvalidHexValueException()
     {
@@ -49,7 +49,7 @@ class HexTest extends \PHPUnit_Framework_TestCase
 
 
     /**
-     * @expectedException MischiefCollective\ColorJizz\Exceptions\InvalidArgumentException
+     * @expectedException ColorWorks\Exceptions\InvalidArgumentException
      */
     public function testMalformedHexValueException()
     {

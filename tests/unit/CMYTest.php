@@ -1,8 +1,8 @@
 <?php
 
-namespace MischiefCollective\ColorJizz\Tests;
+namespace ColorWorks\Tests;
 
-use MischiefCollective\ColorJizz\Formats\CMY;
+use ColorWorks\Formats\CMY;
 
 class CMYTest extends \PHPUnit_Framework_TestCase
 {

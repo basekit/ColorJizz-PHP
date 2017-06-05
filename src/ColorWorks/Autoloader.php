@@ -1,13 +1,13 @@
 <?php
 
 /*
- * This file is part of the ColorJizz package.
+ * This file is part of the ColorWorks package.
  *
  * (c) Mikee Franklin <mikee@mischiefcollective.com>
  *
  */
 
-namespace MischiefCollective\ColorJizz;
+namespace ColorWorks;
 
 /**
  * Autoloader is used to autoload the library files
@@ -25,12 +25,12 @@ class Autoloader
 
     public static function autoload($class)
     {
-        if (0 !== strpos($class, 'MischiefCollective\\ColorJizz')) {
+        if (0 !== strpos($class, 'ColorWorks')) {
             return;
         }
 
         if (is_file(
-            $file = dirname(__FILE__) . '/../../' . str_replace(array('\\', "\0"), array('/', ''), $class) . '.php'
+            $file = dirname(__FILE__) . '/../' . str_replace(array('\\', "\0"), array('/', ''), $class) . '.php'
         )
         ) {
             require $file;
